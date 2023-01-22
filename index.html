@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <br>
+    <input type="email" id="email">
+    <br>
+    <input type="password" name="" id="password">
+    <br>
+    
+    <input type="radio" value="Admin" name="user">admin
+    <input type="radio" value="user" name="user">user
+    <br>
+
+    <input type="button" value="Sign up" id="signup">
+    <br>
+    <!-- <a href="" -->
+        Already Account :   <a href="./signin.html">login </a>
+ <!-- <input type="button" value="Sign in" id="signin">  -->
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyANN86z6aWQpejzl5nWijiPQWE8XVTdjSo",
+            authDomain: "authapp-62983.firebaseapp.com",
+            databaseURL: "https://authapp-62983-default-rtdb.firebaseio.com",
+            projectId: "authapp-62983",
+            storageBucket: "authapp-62983.appspot.com",
+            messagingSenderId: "691677607896",
+            appId: "1:691677607896:web:316b160618e658108aa4ad"
+          };
+    
+          firebase.initializeApp(firebaseConfig);
+        </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
