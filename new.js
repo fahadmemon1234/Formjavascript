@@ -16,6 +16,7 @@ signin.addEventListener("click", function () {
                     firebase.database().ref("user/").child(userdata.user.uid)
                     .once("value", (snap) => {
                         console.log("user panel :",snap.toJSON())
+                        localStorage.setItem("Uid",userdata.user.uid)
                         window.location.replace("user_panel.html")
                     })
 
